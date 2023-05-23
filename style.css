@@ -17,13 +17,29 @@ html {
   margin: 0;
   background: red;
 }
-
-.sidebar {
+.container .sidebar {
   background: black;
   height: 100%;
 }
-
-.main {
+.container .sidebar .sidebar_top {
+  width: 100%;
+  height: 8rem;
+  background-color: #315fe9;
+}
+.container .main {
   background: blue;
   height: 100%;
+}
+.container .main header {
+  width: 100%;
+  height: 8rem;
+  background: rgb(212, 206, 206);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.container .main header .header-left {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
