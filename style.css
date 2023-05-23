@@ -6,25 +6,72 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
   display: grid;
   grid-template-columns: 30rem 1fr;
   max-width: 100%;
-  height: 300rem;
   padding: 0;
   margin: 0;
   background: red;
 }
 .container .sidebar {
-  background: black;
+  background: white;
   height: 100%;
 }
-.container .sidebar .sidebar_top {
+.container .sidebar .sidebar_menu {
+  margin-top: 9rem;
   width: 100%;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.container .sidebar .sidebar_menu .menu-item {
+  width: 13rem;
+  height: 10rem;
+  background-color: #f9fbfd;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+}
+.container .sidebar .sidebar_menu .menu-item img {
+  margin-top: 2rem;
+}
+.container .sidebar .sidebar_menu .menu-item p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+}
+.container .sidebar .sidebar_top {
+  width: 30rem;
   height: 8rem;
   background-color: #315fe9;
+  align-items: center;
+  padding-top: 2rem;
+  position: fixed;
+}
+.container .sidebar .sidebar_top div {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.container .sidebar .sidebar_top div .grid {
+  width: 30px;
+  height: 30px;
+}
+.container .sidebar .sidebar_top div p {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-left: 1rem;
+  color: #fff;
 }
 .container .main {
   background: blue;
@@ -33,13 +80,39 @@ html {
 .container .main header {
   width: 100%;
   height: 8rem;
-  background: rgb(212, 206, 206);
+  background: rgb(238, 233, 233);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2rem;
-  padding-right: 2rem;
+  position: fixed;
 }
 .container .main header .header-left {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.container .main header .header-right {
+  width: 70rem;
+}
+.container .main header .header-right .email {
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  border: none;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  background: rgb(223, 223, 236);
+  right: 0;
+}
+.container .main header .header-right .header-btn {
+  width: 15rem;
+  height: 3.5rem;
+  border: 2px solid rgb(62, 37, 219);
+  margin-left: 2rem;
+  color: blue;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
